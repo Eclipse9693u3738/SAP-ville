@@ -82,3 +82,81 @@ p {
         padding: 28px;
     }
 }
+
+/* NAVBAR */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.nav-item > a:hover {
+    background-color: #f0f0f0;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    min-width: 260px;
+    z-index: 999;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.dropdown li a:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
