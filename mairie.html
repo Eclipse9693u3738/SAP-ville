@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapville</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Skatepark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pole.css">
 </head>
 <body>
- <nav class="navbar">
+
+    <nav class="navbar">
         <a href="index.html" class="navbar-brand">SAPVILLE</a>
         <ul class="nav-list">
             <li class="nav-item">
@@ -22,7 +25,7 @@
             <li class="nav-item">
                 <a href="#">Habitat &amp; Cadre de vie</a>
                 <ul class="dropdown">
-                    <li><a href="#cabanons">Des cabanons de luxe à louer en forêt</a></li>
+                    <li><a href="cabanons.html">Des cabanons de luxe à louer en forêt</a></li>
                     <li><a href="#locations">Des locations à prix bas</a></li>
                     <li><a href="water.html">Eau bioluminescente</a></li>
                     <li><a href="#clubhouse">Clubhouse futuriste</a></li>
@@ -33,7 +36,7 @@
                 <ul class="dropdown">
                     <li><a href="#design">Un centre de design</a></li>
                     <li><a href="casino.html">Un casino à l'effigie du colosse de Rhodes</a></li>
-                    <li><a href="#skatepark">Un skatepark neuf</a></li>
+                    <li><a href="skatepark.html">Un skatepark neuf</a></li>
                     <li><a href="#stade">Stade de foot flambant neuf</a></li>
                 </ul>
             </li>
@@ -47,27 +50,49 @@
         </ul>
     </nav>
 
-    <main>
-        <section id="mairie">
-            <div class="text-block">
-                <h1>Mairie</h1>
-                <p>Bienvenue à la <strong>mairie</strong> de la ville de <strong>SAP</strong>, au cœur de votre administration municipale.</p>
-                <p>Sous la direction de <strong>Anthony Lecot</strong>, maire de SAP, la mairie s'engage chaque jour au service des habitants pour garantir un cadre de vie agréable, des services publics de qualité et un développement harmonieux de la commune.</p>
+    <!-- Hero -->
+    <div class="hero">
+        <div>
+            <h1>Skatepark</h1>
+        </div>
+    </div>
+
+    <!-- Activities -->
+    <div class="container">
+        <div class="activities">
+            <div class="card">
+                <img src="img/skatepark_acceuil.webp" alt="Skatepark vue générale">
+                <div class="card-body">
+                    <h4>Un espace sportif innovant</h4>
+                    <p>
+                        Le nouveau skatepark géant constituera un équipement sportif de premier plan pour la ville. 
+                        Conçu avec des infrastructures modernes et variées, il permettra aux pratiquants de skateboard, 
+                        de BMX, de roller et de trottinette de s'entraîner dans les meilleures conditions. Grâce à ses 
+                        différentes zones adaptées à tous les niveaux, il favorisera la découverte de ces disciplines 
+                        tout en accompagnant la progression des sportifs les plus expérimentés.
+                    </p>
+                </div>
             </div>
-            <div class="text-block">
-                <p>Retrouvez ici :</p>
-                <ul>
-                    <li>Les démarches administratives en ligne et en guichet</li>
-                    <li>Les actualités et événements de la commune</li>
-                    <li>Les informations sur le conseil municipal et les élus</li>
-                    <li>Les services aux habitants (état civil, urbanisme, etc.)</li>
-                    <li>Les projets et initiatives portés par la municipalité</li>
-                </ul>
-                <p>La mairie de SAP est à votre écoute du lundi au vendredi pour vous accompagner dans toutes vos démarches du quotidien.</p>
-                <p><strong>Mairie de SAP</strong> : <em>Une municipalité engagée pour ses habitants.</em></p>
+
+            <div class="card">
+                <img src="img/nosegrab.jpg" alt="Figure de skate">
+                <div class="card-body">
+                    <h4>Un lieu de vie et d'animation</h4>
+                    <p>
+                        Au-delà de sa vocation sportive, le skatepark deviendra un véritable espace de rencontre 
+                        et de partage pour les habitants. Il offrira un cadre dynamique où les jeunes pourront se 
+                        retrouver, échanger et développer un esprit de communauté. Des compétitions, démonstrations 
+                        et événements culturels pourront y être organisés régulièrement, contribuant ainsi à 
+                        l'animation de la ville et à son attractivité auprès des visiteurs.
+                    </p>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Quartier SAP Official — Site fictif réalisé à des fins de démonstration.
+    </footer>
 
 </body>
 </html>
