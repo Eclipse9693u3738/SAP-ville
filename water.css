@@ -1,0 +1,275 @@
+:root {
+    --accent: #2a9d8f;
+    --dark: #0b1a1e;
+    --bg: #f8f6f0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: #1e1e1e;
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background: rgba(11, 26, 30, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    z-index: 200;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    height: 100%;
+    margin: 0;
+}
+
+.nav-item {
+    position: relative;
+    height: 100%;
+}
+
+.nav-item > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-item > a:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    background: rgba(11, 26, 30, 0.97);
+    backdrop-filter: blur(8px);
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+}
+
+.dropdown li {
+    padding: 0.5rem 1.25rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.82rem;
+    white-space: nowrap;
+    cursor: default;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown li:hover {
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+}
+
+.dropdown li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.tracking-widest {
+    letter-spacing: 0.3em;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 60vh;
+    background: linear-gradient(135deg, #0b1a1e 0%, #1a3a3f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.hero-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    opacity: 0.8;
+}
+
+.hero-lead {
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+/* Sections */
+section.container {
+    max-width: 1100px;
+}
+
+/* Section titles */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin-top: 0.5rem;
+    border-radius: 2px;
+}
+
+/* Badge */
+.badge {
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.85rem;
+    font-weight: 500;
+}
+
+/* Image wrapper */
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Cards (section pole nautique) */
+.card {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Parallax divider */
+.parallax-divider {
+    position: relative;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* CTA section */
+.cta-section {
+    background: linear-gradient(135deg, #0b1a1e 0%, #1a3a3f 100%);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+    }
+    .hero-title {
+        font-size: 2.8rem !important;
+    }
+    .parallax-divider {
+        min-height: 200px;
+    }
+    .img-wrapper img {
+        height: 250px;
+    }
+}
