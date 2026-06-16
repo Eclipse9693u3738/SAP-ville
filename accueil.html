@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil — Sapville</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-brand">SAPVILLE</span>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">Infrastructures &amp; Services publics</a>
+                <ul class="dropdown">
+                    <li><a href="#mairie">Une mairie imposante</a></li>
+                    <li><a href="#geothermie">Une électricité géothermique renouvelable</a></li>
+                    <li><a href="#voiture-electrique">L'obligation de rouler en voiture électrique</a></li>
+                    <li><a href="#residences">Des résidences sécurisées</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">Habitat &amp; Cadre de vie</a>
+                <ul class="dropdown">
+                    <li><a href="#cabanons">Des cabanons de luxe à louer en forêt</a></li>
+                    <li><a href="#locations">Des locations à prix bas</a></li>
+                    <li><a href="#eau-bioluminescente">Eau bioluminescente</a></li>
+                    <li><a href="#clubhouse">Clubhouse futuriste</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">Culture, Loisirs &amp; Divertissement</a>
+                <ul class="dropdown">
+                    <li><a href="#design">Un centre de design</a></li>
+                    <li><a href="#casino">Un casino à l'effigie du colosse de Rhodes</a></li>
+                    <li><a href="#skatepark">Un skatepark neuf</a></li>
+                    <li><a href="#stade">Stade de foot flambant neuf</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">Tourisme &amp; Activités de découverte</a>
+                <ul class="dropdown">
+                    <li><a href="#archeologie">Un site archéologique sous-marin</a></li>
+                    <li><a href="#pole-nautique">Un pôle nautique aux activités variées</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>SAPVILLE</h1>
+        <p>Là où tout commence</p>
+    </div>
+
+    <div class="grid">
+
+        <!-- 1 — Cabanons de luxe (img haut) -->
+        <div id="cabanons" class="card">
+            <div class="card-img">
+                <img src="img/cabanons.jpg" alt="Cabanons de luxe">
+            </div>
+            <div class="card-content">
+                <h3>Des cabanons de luxe à louer en forêt</h3>
+                <p>Niché au cœur des bois, un havre de paix tout confort.</p>
+            </div>
+        </div>
+
+        <!-- 2 — Résidences sécurisées (img bas) -->
+        <div id="residences" class="card img-bottom">
+            <div class="card-content">
+                <h3>Des résidences sécurisées</h3>
+                <p>Vivre serein, 24h/24 et 7j/7.</p>
+            </div>
+            <div class="card-img">
+                <img src="img/residences_acceuil.jpg" alt="Résidences sécurisées">
+            </div>
+        </div>
+
+        <!-- 3 — Mairie imposante (img haut) -->
+        <div id="mairie" class="card">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80" alt="Mairie imposante">
+            </div>
+            <div class="card-content">
+                <h3>Une mairie imposante</h3>
+                <p>Un bâtiment historique au service des citoyens.</p>
+            </div>
+        </div>
+
+        <!-- 4 — Géothermie (img bas) -->
+        <div id="geothermie" class="card img-bottom">
+            <div class="card-content">
+                <h3>Une électricité géothermique renouvelable</h3>
+                <p>La chaleur de la terre au service de la ville.</p>
+            </div>
+            <div class="card-img">
+                <img src="img/geothermie_acceuil.jpg" alt="Géothermie">
+            </div>
+        </div>
+
+        <!-- 5 — Centre de design (img haut) -->
+        <div id="design" class="card">
+            <div class="card-img">
+                <img src="img/design_acceuil.jpg" alt="Centre de design">
+            </div>
+            <div class="card-content">
+                <h3>Un centre de design</h3>
+                <p>L'élégance se réinvente à Sapville.</p>
+            </div>
+        </div>
+
+        <!-- 6 — Casino Colosse (img bas) -->
+        <div id="casino" class="card img-bottom">
+            <div class="card-content">
+                <h3>Un casino à l'effigie du colosse de Rhodes</h3>
+                <p>Tentez votre chance dans une statue mythique.</p>
+            </div>
+            <div class="card-img">
+                <img src="img/casino.png" alt="Casino Colosse">
+            </div>
+        </div>
+
+        <!-- 7 — Site archéologique sous-marin (img haut) -->
+        <div id="archeologie" class="card">
+            <div class="card-img">
+                <img src="img/archeologie_acceuil.png" alt="Site archéologique sous-marin">
+            </div>
+            <div class="card-content">
+                <h3>Un site archéologique sous-marin</h3>
+                <p>Explorez les vestiges engloutis du passé.</p>
+            </div>
+        </div>
+
+        <!-- 8 — Skatepark neuf (img bas) -->
+        <div id="skatepark" class="card img-bottom">
+            <div class="card-content">
+                <h3>Un skatepark neuf</h3>
+                <p>Récemment rénové pour les riders de tous niveaux.</p>
+            </div>
+            <div class="card-img">
+                <img src="img/skatepark_acceuil.webp" alt="Skatepark">
+            </div>
+        </div>
+
+        <!-- 9 — Clubhouse futuriste (img haut) -->
+        <div id="clubhouse" class="card">
+            <div class="card-img">
+                <img src="img/clubhouse.jpg" alt="Clubhouse futuriste">
+            </div>
+            <div class="card-content">
+                <h3>Un clubhouse futuriste</h3>
+                <p>Un lieu avant-gardiste pour se retrouver.</p>
+            </div>
+        </div>
+
+        <!-- 10 — Locations à prix bas (img bas) -->
+        <div id="locations" class="card img-bottom">
+            <div class="card-content">
+                <h3>Des locations à prix bas</h3>
+                <p>Des logements accessibles sans compromis.</p>
+            </div>
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Locations">
+            </div>
+        </div>
+
+        <!-- 11 — Eau spéciale (img haut) -->
+        <div id="eau-bioluminescente" class="card">
+            <div class="card-img">
+                <img src="img/glow_acceuil.jpg" alt="Eau bioluminescente">
+            </div>
+            <div class="card-content">
+                <h3>Une eau spéciale</h3>
+                <p>Des algues bioluminescentes la font briller la nuit.</p>
+            </div>
+        </div>
+
+        <!-- 12 — Pôle nautique (img bas) -->
+        <div id="pole-nautique" class="card img-bottom">
+            <div class="card-content">
+                <h3>Un pôle nautique aux activités variées</h3>
+                <p>Kayak, paddle, plongée : tout l'univers aquatique à portée de main.</p>
+            </div>
+            <div class="card-img">
+                <img src="img/pole_acceuil.jpg" alt="Pôle nautique">
+            </div>
+        </div>
+
+        <!-- 13 — Stade de foot (img haut) -->
+        <div id="stade" class="card">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=600&q=80" alt="Stade de foot">
+            </div>
+            <div class="card-content">
+                <h3>Un stade de foot flambant neuf</h3>
+                <p>Le temple du sport sapvillois.</p>
+            </div>
+        </div>
+
+        <!-- 14 — Voiture électrique (img bas) -->
+        <div id="voiture-electrique" class="card img-bottom">
+            <div class="card-content">
+                <h3>L'obligation de rouler en voiture électrique</h3>
+                <p>Une ville verte, une mobilité propre.</p>
+            </div>
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=80" alt="Borne de recharge">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Sapville — Site fictif réalisé à des fins de démonstration.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #333333;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5em;
+    margin: 0 0 0.5em;
+}
+
+p {
+    color: #333333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 1em;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-images img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.hero-text {
+    display: grid;
+    gap: 24px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.text-block {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.text-block ul {
+    padding-left: 1.3rem;
+    margin: 0 0 1em;
+}
+
+.text-block li {
+    margin-bottom: 0.8em;
+}
+
+@media (min-width: 900px) {
+    .hero-text {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .text-block {
+        padding: 28px;
+    }
+}
